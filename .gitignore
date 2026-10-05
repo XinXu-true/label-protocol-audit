@@ -1,0 +1,28 @@
+# Python
+__pycache__/
+*.py[cod]
+.pytest_cache/
+*.egg-info/
+build/
+dist/
+
+# Dataset (obtain from QMUL; never commit)
+data/
+DEAP/
+*.dat
+*.zip
+
+# Generated sidecars
+results/figs/*.alignment.json
+results/figs/*.alignment.svg
+results/figs/*.collision.json
+
+# Credentials
+*.key
+key.txt
+*PAT*key.txt
+
+# Figures are shipped as PNG only; re-running make_figures.py also writes
+# vector versions (PDF/SVG) that are not tracked here.
+results/figs/*.pdf
+results/figs/*.svg

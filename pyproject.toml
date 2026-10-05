@@ -1,0 +1,15 @@
+[project]
+name = "label-protocol-audit"
+version = "0.1.0"
+description = "Label-protocol audit for EEG-based emotion recognition: how the conversion of self-reports to training labels bounds the comparability of reported accuracies"
+requires-python = ">=3.11"
+license = {text = "MIT"}
+dependencies = [
+    "numpy>=1.26",
+    "scipy>=1.11",
+    "matplotlib>=3.8",
+]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["src"]
