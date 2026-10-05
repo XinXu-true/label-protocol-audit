@@ -6,9 +6,10 @@ __pycache__/
 build/
 dist/
 
-# Dataset (obtain from QMUL; never commit)
-data/
-DEAP/
+# Dataset (obtain from QMUL; never commit). Root-anchored so that
+# src/prlpaper/data/ (source code) is not caught by the pattern.
+/data/
+/DEAP/
 *.dat
 *.zip
 
